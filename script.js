@@ -2,7 +2,6 @@
 var scroll = new SmoothScroll('a[href*="#"]');
 $(document).scroll(function(id){
  	var pos = scrollY;
- 	console.log(pos)
  	if(pos>580){
  		$('#panel2 h2').css('opacity','1');
  		$('#panel2 .col-md-4').css('opacity','1');
@@ -22,12 +21,6 @@ $(document).scroll(function(id){
  		 $('#panel4 .col-md-4').css('opacity','1');
  		 $('#panel4 h2').addClass('animated rotateIn');
  		 $('#panel4 .col-md-4').addClass('animated zoomIn');
- 	}
- 	if(pos>2770){	 
- 		 $('#subscriber .row .col-md-12 .btn').css('opacity','1');
- 		 $('#subscriber h4').css('opacity','1');
- 		 $('#subscriber .row .col-md-12 .btn').addClass('animated fadeInBottomLeft');
- 		 $('#subscriber h4').addClass('animated fadeInBottomRight');
  	}
  })
  //index.php scroll animation
