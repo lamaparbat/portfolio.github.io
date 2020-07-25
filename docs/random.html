@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Random() function</title>
+</head>
+<body>
+	<br><br><br><br>
+<p id="p"></p>
+<button onclick="generate()">Generate Random Number</button>
+</body>
+<script>
+	function generate(){
+		var random_num= Math.trunc(Math.random() * 10);//Math.trunc return postive integer value excluding decimal 
+	    document.getElementById('p').innerHTML = random_num; 
+	}
+</script>
+</html>

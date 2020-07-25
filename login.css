@@ -1,0 +1,58 @@
+#form{
+	padding-top: 90px;
+}
+#form{
+	/*height: 600px;*/
+	background:url(image/blob.svg);
+	background-size: 70% 130%;
+	background-repeat: no-repeat;
+}
+#form .row .col-md-8{
+	text-align: center;
+}
+#form .row .col-md-8 h4{
+	margin-left: -180px;
+}
+#form .row .col-md-8 input{
+	padding: 20px;
+	margin-bottom: 20px;
+	height: 30px;
+	width: 250px;
+}
+#form .row .col-md-8 #login_btn{
+	padding: 0px;
+}
+#form .row .col-md-4 img{
+	margin-bottom: 50px;
+}
+@media(max-width: 450px){
+	#form{
+		background: unset;
+	}
+	#panel1{
+		overflow-y: scroll;
+	}
+}
+
+/*create new account css*/
+#form .row .col-md-8 a{
+	margin-left: -120px;
+	margin-right: -20px;
+}
+#create{
+	margin-top: 150px;
+	margin-bottom: 190px;
+}
+#create .row{
+	margin-top: 120px;
+}
+#create .row .col-md-8 input{
+	padding: 10px;
+	padding-left: 25px;
+	width:250px;
+	margin-top:20px;	
+}
+#create .row .col-md-8 input:hover{
+border:2px solid red;
+transition: .5s;
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style>
+		#img_frame{
+			height: 300px;
+			width: 300px;
+			background-color: red;
+			position: absolute;
+			transform: translate(500px,200px);
+			background-image: url(love.jpg);
+			background-size: cover;
+			background-repeat: no-repeat;
+		}
+	</style>
+</head>
+<body>
+	<!-- THREE REQUIRE ELEMENT FOR UPLOADING IMAGE SRC
+	1.<IMG/>
+	2.onchange="function_name(para)"
+	3.for="id of <input type="file" onchange="function_name(para)"> " --
+	<label for='id of <input type="file" onchange="function_name(para)'> "><div></div></label>
+	-->
+	<img src="love.jpg" height="200px" width="300px" id="Display">
+	<input type="file" accept="image/*" id="Img_Location" onchange="upload(event)" style="display: none;">
+	<div></div>
+	<label for="Img_Location" style="cursor: pointer;"><div id="img_frame" ></div></label>
+</body>
+<script>
+    var upload= function(event) {
+    	var Display=document.getElementById('Display');
+    	Display.src=URL.createObjectURL(event.target.files[0]);
+    };
+
+</script>
+</html>
